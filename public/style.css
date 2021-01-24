@@ -1,0 +1,16 @@
+.generation { 
+   display:grid;
+   background-color: lightgray;
+   margin: 3px; 
+   border: 1px solid black; 
+   padding: 0px; 
+   width:100%;
+   min-height: 6em;
+   grid-template-columns: 1fr 2fr 2fr 2fr 1fr; 
+   grid-gap: 5px;} 
+.section {
+   overflow: hidden;
+   }
+   .clickable {
+      cursor: pointer
+   }

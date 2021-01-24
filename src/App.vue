@@ -1,28 +1,77 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire">
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="menu = !menu"></v-app-bar-nav-icon>
+      <v-menu v-model="menu" nudge-bottom="50" offset-y>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title class="clickable" @click="showDlg">
+              Create New Person</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title class="clickable" @click="showDataDlg">
+              Show Data
+              </v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+
+      <v-toolbar-title>
+        <div style="display: inline-block">Family</div>
+        <div style="display: inline-block;">
+          <v-alert
+            type="success"
+            dense
+            dismissible
+            v-model="showAlert"
+            style="margin-left: 200px"
+          >
+            {{ msg }}
+          </v-alert>
+        </div>
+      </v-toolbar-title>
+    </v-app-bar>
+
+    <v-main>
+      <Family />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Family from "./components/Family.vue";
 
 export default {
-  name: 'App',
+  data: () => ({ menu: false }),
   components: {
-    HelloWorld
-  }
-}
+    Family,
+  },
+  computed: {
+    showAlert: {
+      get: function () {
+        return this.$store.state.msg != null;
+      },
+      set: function () {
+        this.$store.commit("MSG", null);
+      },
+    },
+    msg: function () {
+      return this.$store.state.msg;
+    },
+  },
+  methods: {
+    showDlg() {
+      this.$store.commit("DLG_PERSON", { fname: "", mname: "", lname: "" });
+    },
+    showDataDlg() {
+      this.$store.commit("DLG_DATA", true);
+    },
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.v-alert {
+  margin-bottom: 0px !important;
 }
 </style>

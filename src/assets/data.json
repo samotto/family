@@ -1,0 +1,180 @@
+{
+   "persons": [
+      {
+         "id": 1,
+         "lname": "Otto",
+         "fname": "Samuel",
+         "mname": "Emil",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "m",
+         "mom_id": 2,
+         "dad_id": 3
+      },
+      {
+         "id": 2,
+         "lname": "Otto",
+         "fname": "Betty",
+         "mom_id": 9,
+         "dad_id": 8,
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "f"
+      },
+      {
+         "id": 3,
+         "lname": "Otto",
+         "fname": "Bob",
+         "mom_id": 7,
+         "dad_id": 6,
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "m"
+      },
+      {
+         "id": 4,
+         "lname": "Ondrus",
+         "fname": "Jennifer",
+         "mname": "Ann",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "f",
+         "mom_id": 11,
+         "dad_id": 10
+      },
+      {
+         "id": 5,
+         "lname": "Otto",
+         "fname": "Rob",
+         "mname": "Ayres",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "m",
+         "mom_id": 2,
+         "dad_id": 3
+      },
+      {
+         "id": 6,
+         "lname": "Otto",
+         "fname": "Emil",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "death_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "m"
+      },
+      {
+         "id": 7,
+         "lname": "Stengel",
+         "fname": "Margret",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "death_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "f"
+      },
+      {
+         "id": 8,
+         "lname": "Ayres",
+         "fname": "Samuel",
+         "gender": "m",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "death_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 9,
+         "lname": "Valentine",
+         "fname": "Viola",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "death_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "f"
+      },
+      {
+         "id": 10,
+         "lname": "Ondrus",
+         "fname": "Jerry",
+         "birth_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 11,
+         "lname": "Papierz",
+         "fname": "Joan",
+         "birth_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 12,
+         "lname": "Otto",
+         "fname": "Taylor",
+         "mom_id": 4,
+         "dad_id": 1,
+         "gender": "f",
+         "birth_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 13,
+         "lname": "Otto",
+         "fname": "Joshua",
+         "mom_id": 4,
+         "dad_id": 1,
+         "birth_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 14,
+         "lname": "Ondrus",
+         "fname": "Julie",
+         "mom_id": 11,
+         "dad_id": 10,
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "f"
+      },
+      {
+         "id": 15,
+         "lname": "Ondrus",
+         "fname": "Jeanine",
+         "mom_id": 11,
+         "dad_id": 10,
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "children": [
+            19
+         ],
+         "gender": "f"
+      },
+      {
+         "id": 16,
+         "lname": "Ayres",
+         "fname": "William",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "mom_id": 8,
+         "dad_id": 9
+      },
+      {
+         "id": 17,
+         "lname": "Ayres",
+         "fname": "David",
+         "dad_id": 16,
+         "birth_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 18,
+         "lname": "Otto",
+         "fname": "Isaac",
+         "dad_id": 5,
+         "birth_dt": "2020-12-23T00:00:00.000Z"
+      },
+      {
+         "id": 19,
+         "lname": "Cunnea",
+         "fname": "Isabel",
+         "mom_id": 15,
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "f"
+      },
+      {
+         "id": 20,
+         "lname": "Helm",
+         "fname": "Kevin",
+         "birth_dt": "2020-12-23T00:00:00.000Z",
+         "gender": "m"
+      }
+   ],
+   "events": [
+      {
+         "id": 1,
+         "pid1": 1,
+         "pid2": 4,
+         "type": "Marraige",
+         "dt": "1991-10-26T00:00:00.000Z"
+      }
+   ]
+}
